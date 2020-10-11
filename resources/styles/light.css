@@ -1,0 +1,83 @@
+/*******************************************************************************
+ *                                                                             *
+ * CSS for the LIGHT theme                                                     *
+ *                                                                             *
+ ******************************************************************************/
+
+@import "base.css";
+
+/*******************************************************************************
+ *                                                                             *
+ * Global constants                                                            *
+ *                                                                             *
+ ******************************************************************************/
+.root {
+    -fx-text-base-color: black;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Tiles                                                                       *
+ *                                                                             *
+ ******************************************************************************/
+.tile:selected {
+    -fx-background-color: derive(-swatch-100, +75%);
+}
+
+.tile-title-label * {
+    -fx-text-fill: #222;
+}
+
+.tile .slider .axis {
+    -fx-tick-label-fill: #222;
+}
+
+/*******************************************************************************
+ *                                                                             *
+ * Text field, text area                                                       *
+ *                                                                             *
+ ******************************************************************************/
+.text-area, .text-field {
+    -underline-color: #eee;
+}
+
+.button-dark:default {
+    -fx-background-color:  #53565B;
+}
+
+.button-dark:focused, .button-dark:focused, .button-dark:default:focused {
+    -fx-background-color:  #53565B;
+    -fx-text-fill: white;
+}
+
+.button-dark:selected {
+    -fx-background-color:  #FA0B47;
+    -fx-text-fill: white;
+}
+
+.button-dark:focused:selected {
+    -fx-background-color:  #FA0B47;
+    -fx-text-fill: white;
+}
+
+
+.button-dark:armed, button-dark:selected, .button-dark:default:armed {
+    -fx-background-color:  #FA0B47;
+    -fx-text-fill: white;
+}
+
+.button-dark {
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-alignment: CENTER;
+    -fx-background-color:  #53565B;
+    -fx-effect: null;
+}
+
+.button-dark:hover {
+    -fx-background-color: #676B73;
+}
+
+.button-dark:pressed {
+    -fx-background-color: #54585E;
+}

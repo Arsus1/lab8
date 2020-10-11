@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<StackPane prefHeight="268.0" prefWidth="580.0" xmlns="http://javafx.com/javafx/10.0.2-internal"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="ru.ifmo.lab.ui.controller.LoginViewController">
+    <padding>
+        <Insets bottom="10.0" left="10.0" right="10.0" top="10.0"/>
+    </padding>
+    <StackPane>
+        <VBox prefHeight="256.0" prefWidth="489.0" spacing="10.0">
+            <Label fx:id="welcome_lb" prefHeight="46.0" prefWidth="269.0" text="%key.welcome">
+                <font>
+                    <Font size="30.0"/>
+                </font>
+            </Label>
+            <GridPane>
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0"
+                                       prefWidth="150.0"/>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="1.7976931348623157E308" minWidth="10.0"
+                                       prefWidth="189.0"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+                    <RowConstraints minHeight="10.0" prefHeight="50.0" vgrow="SOMETIMES"/>
+                </rowConstraints>
+                <Label fx:id="user_text_lb" prefHeight="21.0" prefWidth="277.0" text="%key.userText" GridPane.columnIndex="0"
+                       GridPane.rowIndex="0">
+                    <GridPane.margin>
+                        <Insets left="5.0"/>
+                    </GridPane.margin>
+                </Label>
+                <Label fx:id="password_text_lb" prefHeight="21.0" prefWidth="265.0" text="%key.passwordText" GridPane.columnIndex="0"
+                       GridPane.rowIndex="1">
+                    <GridPane.margin>
+                        <Insets left="5.0"/>
+                    </GridPane.margin>
+                </Label>
+                <TextField fx:id="user" GridPane.columnIndex="1" GridPane.rowIndex="0"/>
+                <PasswordField fx:id="password" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+            </GridPane>
+            <GridPane alignment="CENTER">
+                <columnConstraints>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0"/>
+                    <ColumnConstraints hgrow="SOMETIMES" maxWidth="-Infinity" minWidth="10.0"
+                                       prefWidth="200.0"/>
+                </columnConstraints>
+                <rowConstraints>
+                    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES"/>
+                </rowConstraints>
+                <VBox.margin>
+                    <Insets top="50.0"/>
+                </VBox.margin>
+                <Button fx:id="loginButton" alignment="CENTER" defaultButton="true"
+                        maxHeight="1.7976931348623157E308"
+                        maxWidth="1.7976931348623157E308" mnemonicParsing="false" onAction="#onLoginClick"
+                        prefHeight="31.0" prefWidth="101.0" text="%key.loginText" GridPane.columnIndex="1"/>
+                <Hyperlink fx:id="registerButton" focusTraversable="false" maxHeight="1.7976931348623157E308"
+                           maxWidth="1.7976931348623157E308" onAction="#onRegisterClick" prefHeight="29.0"
+                           prefWidth="507.0" text="%key.newUserText" visited="true"/>
+            </GridPane>
+        </VBox>
+    </StackPane>
+</StackPane>
